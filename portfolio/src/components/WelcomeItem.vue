@@ -7,24 +7,28 @@ export default {
 <template>
     <div id="bar">
       <div class="project">
-        <button>Project</button>
+        <button>About</button>
       </div>
       <div class="description">
-        <button>about</button>
+        <button>Project</button>
       </div>
       <div class="contact">
-        <button>contact</button>
+        <button>Contact</button>
       </div>
     </div>
     <div class="linkedin_logo">
-      <button type="button">
-        <img src="@/assets/linkedin_logo.png" alt="linkedin_logo PNG">
-      </button>
+      <a href="https://www.linkedin.com/in/pierrik-clary-837a852a1/">
+        <button type="button">
+          <img src="@/assets/linkedin_logo.png" alt="linkedin_logo PNG">
+        </button>
+      </a>
     </div>
     <div class="git_logo">
-      <button type="button">
-        <img src="@/assets/github_logo_icon_147285.png" alt="github_logoPNG">
-      </button>
+      <a href="https://github.com/pierool2000">
+        <button type="button">
+          <img src="@/assets/github_logo_icon_147285.png" alt="github_logoPNG">
+        </button>
+      </a>
     </div>
 </template>
 
@@ -48,6 +52,7 @@ export default {
 
 .linkedin_logo button:hover img {
   filter: drop-shadow(0 0 10px rgba(0, 129, 255, 0.46));
+  transform: scale(1.1);
 }
 
 
@@ -72,16 +77,17 @@ export default {
 
 .git_logo button:hover img {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.47));
+  transform: scale(1.1);
 }
 
 #bar {
   position: fixed;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 #bar div {
-  margin-top: 90px;
-  margin-left: -90px;
+  margin-top: 70px;
+  margin-left: -95px;
   transform: rotate(90deg);
 }
 
@@ -97,7 +103,6 @@ export default {
 }
 
 #bar div button:hover {
-  color: #ff0000;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
   transform: scale(1.05);
 }
@@ -109,9 +114,8 @@ export default {
   }
 
   #bar div {
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: -55px;
-    transform: rotate(90deg);
   }
 
   #bar div button {
